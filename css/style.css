@@ -1,3 +1,84 @@
+@media (min-width: 1620px) {
+  .container {
+    width: 1578px;
+  }
+}
+@media (min-width: 1900px) {
+  .container {
+    width: 1638px;
+  }
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.button-u {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  background-color: #ff023e;
+  padding: 0.8125em 1.875em;
+}
+.button-u:hover {
+  color: #fff;
+}
+
 body {
   font-family: "Fira Sans";
+}
+
+.banner-slider {
+  position: relative;
+}
+.banner-slider .slider-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 46.1875em;
+  min-height: 47.9vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.banner-slider .slider-img .item {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #006f61;
+  max-width: 20.5em;
+  margin-left: auto;
+  line-height: 1.2;
+}
+.banner-slider .slider-img .item .button-u {
+  margin-left: 4em;
+  margin-top: -4em;
+}
+.banner-slider .slider-img .item .overlay {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 1.6em;
+}
+.banner-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  color: #ff023e;
+  font-size: 2rem;
+  margin-top: -1rem;
+  cursor: pointer;
+  left: 1.25em;
+}
+.banner-slider .fa-caret-circle-right {
+  left: auto;
+  right: 1.25em;
 }

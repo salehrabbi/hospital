@@ -2,7 +2,81 @@ $f: 'Fira Sans';
 $n: 'Nunito';
 @import '_rem';
 
+@media (min-width:1620px) {
+    .container {
+        width: (1578px);
+    }
+}
 
-body{
+
+@media (min-width: 1900px) {
+    .container {
+        width: (1578px + 60);
+    }
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.button-u {
+    font-size: rem(16px);
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
+    background-color: #ff023e;
+    padding: em(13/16) em(30/16);
+    &:hover{
+        color: #fff;
+    }
+}
+
+body {
     font-family: $f;
+}
+
+.banner-slider {
+    position: relative;
+    .slider-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: em(739/16);
+        min-height: 47.9vw;
+        align-items: center;
+        display: flex !important;
+        .item {
+            font-size: rem(40px);
+            font-weight: 300;
+            color: #006f61;
+            max-width: em(820/40);
+            margin-left: auto;
+            line-height: 1.2;
+            .button-u{
+                margin-left: em(64/16);
+                margin-top: em(-64/16);
+            }
+            .overlay {
+                background: rgba(255, 255, 255, .8);
+                border-radius: 16px;
+                padding: em(64/40);
+            }
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        color: #ff023e;
+        font-size: rem(32px);
+        margin-top: (-2rem/2);
+        cursor: pointer;
+        left: em(40/32);
+    }
+    .fa-caret-circle-right{
+        left: auto;
+        right: em(40/32);
+    }
 }
