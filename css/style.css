@@ -71,14 +71,27 @@ body {
 }
 
 .main-header {
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  background: #fff;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
+.header-space {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .header-space {
+    display: block;
+  }
+
+  .main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+    top: 0;
+    left: 0;
+  }
+}
 /*===================== Mega menu ====================*/
 .navbar-default {
   background-color: transparent;

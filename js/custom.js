@@ -34,6 +34,13 @@ $('.patner-slider').slick({
                 slidesToScroll: 2,
             }
     },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+    },
   ]
 });
 
