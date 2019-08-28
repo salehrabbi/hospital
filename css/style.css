@@ -164,10 +164,9 @@ body {
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-  left: auto;
-  right: auto;
-  padding: 60px 30px;
   background-color: #e7e7e7;
+  margin: 0 auto;
+  max-width: 829px;
 }
 
 .mega-drop {
