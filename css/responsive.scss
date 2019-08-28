@@ -1,5 +1,247 @@
-@media (max-width: 1366px){
-    html{
+@media (max-width: 1620px) {
+    .navbar-brand img {
+        width: 13.833em;
+    }
+}
+
+@media (max-width: 1366px) {
+    html {
         font-size: 80%;
+    }
+
+    .navbar-brand img {
+        width: 13.833em;
+    }
+
+    .yamm .dropdown.yamm-fw .dropdown-menu {
+        padding: 30px 0;
+    }
+}
+
+
+@media (max-width:1199px) {
+    html {
+        font-size: 75%;
+    }
+
+    .poll span {
+        width: 92%;
+    }
+
+    .navbar-brand img {
+        width: 10.833em;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+
+
+}
+
+
+
+@media (max-width:991px) {
+    .navbar-brand img {
+        width: 6.92em;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 12px;
+        padding: 2px 9px;
+    }
+
+    .eventos {
+        margin-top: 0;
+    }
+
+    .options {
+        min-width: 117px;
+    }
+
+    .banner-slider .slider-img .item {
+        font-size: 1.5rem;
+    }
+
+    .Encuestas,
+    .eventos {
+        padding-bottom: 30px;
+    }
+
+    .partner-slider-overlay .slick-slide {
+        img {
+            width: 100%;
+        }
+    }
+
+    .main-footer {
+        padding-top: 0;
+
+        .map {
+            position: static;
+            height: 331px;
+            width: 100%;
+        }
+    }
+
+    .banner-slider .slider-img .item .button-u {
+        margin-left: 2em;
+        margin-top: -2em;
+    }
+}
+
+
+@media (max-width:767px) {
+    .tramites-menu li {
+        display: block;
+
+        span {
+            margin: 0 auto;
+        }
+    }
+
+    .tramites-menu li a {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .navbar-default {
+        display: block;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        border: none;
+    }
+
+    .navbar-default .navbar-nav > li:first-child,
+    .navbar-default .navbar-nav > li:last-child {
+        border-radius: 0;
+    }
+
+    .options {
+        position: absolute;
+        top: 23px;
+        right: 70px;
+    }
+
+    .navbar-brand img {
+        width: 8.92em;
+    }
+
+    .main-header {
+        .container {
+            width: 100%;
+        }
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        background: #eaeaea;
+        border-radius: 50px 0 0 50px;
+        width: 57px;
+        height: 48px;
+        margin-right: 0;
+        padding: 9px 0;
+        padding-left: 13px;
+        padding-right: 6px;
+        margin-top: 14px;
+
+    }
+
+    .navbar-toggle .icon-bar {
+        width: 60%;
+        height: 3px;
+        margin: 0 auto;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #a7a7a7;
+    }
+
+    .option-area {
+        padding: 15px 0;
+    }
+
+    .setting-area .contraste,
+    #google_translate_element {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .banner-slider .slider-img {
+        min-height: 211px;
+    }
+
+    .banner-slider .slider-img .item {
+        font-size: 1.2rem;
+    }
+
+
+
+    .service .item .img {
+        width: 6em;
+        height: 6em;
+    }
+
+    .service .item .text {
+        width: calc(100% - 6em);
+        padding-left: 1em;
+    }
+
+    .banner-slider .button-u {
+        font-size: .8rem;
+    }
+
+    .setting-area .contraste,
+    #google_translate_element {
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .share-area {
+        text-align: left;
+    }
+
+    .share-area a {
+        margin: 10px 0;
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+
+    .search-form form {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:375px) {
+    .options i {
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        margin: 0 1px;
+        font-size: 14px;
+    }
+
+    .navbar-brand img {
+        width: 7.92em;
+    }
+
+    .options {
+        position: absolute;
+        top: 26px;
+        right: 63px;
     }
 }
