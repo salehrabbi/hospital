@@ -14,12 +14,15 @@ $n: 'Nunito';
         width: (1578px + 60);
     }
 }
-.pc{
+
+.pc {
     display: block;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
+
 .flex {
     display: flex;
     flex-flow: row wrap;
@@ -870,6 +873,7 @@ body {
 
     .footer-social {
         padding: 30px 0;
+
         a {
             margin-left: 0;
             margin: 5px 0;
@@ -887,4 +891,93 @@ body {
     background-color: #ff023e;
     padding: 10px 0;
     color: #fff;
+}
+
+
+/*=================== Table page ======================*/
+
+.bread-area {
+    background-color: #00b69f;
+
+    .breadcrumb {
+        padding: em(11/16) em(15/16);
+        background-color: transparent;
+        margin: 0;
+        font-family: #f;
+        color: #fff;
+
+        li {
+            font-size: rem(16px);
+
+            &:first-child {
+                a {
+                    color: #ff023e;
+                }
+            }
+        }
+
+        a {
+            font-family: #f;
+            color: #006f61;
+        }
+    }
+}
+
+
+
+.drawermenu {
+    background: rgba(0, 182, 159, .08);
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        a {
+            color: #006f61;
+            font-size: rem(16px);
+            font-weight: 700;
+            line-height: (28/16);
+        }
+
+        a.down {
+            padding: em(20/16) em(30/16);
+            display: block;
+            border-bottom: 2px solid #75d7cb;
+            position: relative;
+
+            i {
+                float: right;
+                position: absolute;
+                font-size: 32px;
+                right: 20px;
+                top: 21px
+            }
+        }
+
+        .sub-menu {
+            padding: em(15/16) em(40/16);
+            border-bottom: 2px solid #75d7cb;
+        }
+
+        a.down.active {
+            border-bottom: 0;
+            padding-bottom: 0;
+            color: #292424;
+
+            .fa-angle-down::before {
+                content: "\f106";
+            }
+        }
+
+        a {
+            &:hover {
+                color: #292424;
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
 }

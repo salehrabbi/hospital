@@ -814,3 +814,71 @@ body {
   padding: 10px 0;
   color: #fff;
 }
+
+/*=================== Table page ======================*/
+.bread-area {
+  background-color: #00b69f;
+}
+.bread-area .breadcrumb {
+  padding: 0.6875em 0.9375em;
+  background-color: transparent;
+  margin: 0;
+  font-family: #f;
+  color: #fff;
+}
+.bread-area .breadcrumb li {
+  font-size: 1rem;
+}
+.bread-area .breadcrumb li:first-child a {
+  color: #ff023e;
+}
+.bread-area .breadcrumb a {
+  font-family: #f;
+  color: #006f61;
+}
+
+.drawermenu {
+  background: rgba(0, 182, 159, 0.08);
+}
+.drawermenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.drawermenu ul a {
+  color: #006f61;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+.drawermenu ul a.down {
+  padding: 1.25em 1.875em;
+  display: block;
+  border-bottom: 2px solid #75d7cb;
+  position: relative;
+}
+.drawermenu ul a.down i {
+  float: right;
+  position: absolute;
+  font-size: 32px;
+  right: 20px;
+  top: 21px;
+}
+.drawermenu ul .sub-menu {
+  padding: 0.9375em 2.5em;
+  border-bottom: 2px solid #75d7cb;
+}
+.drawermenu ul a.down.active {
+  border-bottom: 0;
+  padding-bottom: 0;
+  color: #292424;
+}
+.drawermenu ul a.down.active .fa-angle-down::before {
+  content: "\f106";
+}
+.drawermenu ul a:hover {
+  color: #292424;
+}
+.drawermenu ul ul {
+  display: none;
+}
