@@ -129,4 +129,22 @@ $(".header-space").height($(".main-header").outerHeight(true));
 
 
 
+$(document).ready(function () {
+    $('.data-table').DataTable({
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ registros",
+            "zeroRecords": "Nothing found - sorry",
+            "info": "Mostrando registros del _PAGE_ al _PAGES_ de un total de _PAGES_ registros",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "searchPlaceholder": "Buscar por palabra…"
+        },
+        "iDisplayLength": 4,
+        "lengthMenu": [[4, 10, 25, 50, -1], [4, 10, 25, "All"]]
+    });
+});
 
+
+$(function () {
+    $('.dataTables_length select').selectpicker();
+});
