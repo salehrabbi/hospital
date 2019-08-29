@@ -244,6 +244,23 @@
   .search-form form {
     width: 100%;
   }
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .main-footer .footer-social {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .main-footer .footer-social a {
+    width: auto;
+    float: none;
+  }
 }
 @media (max-width: 375px) {
   .options i {

@@ -8,6 +8,14 @@
     width: 1638px;
   }
 }
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,6 +796,17 @@ body {
 }
 .main-footer .widget {
   padding: 15px 0;
+}
+.main-footer .footer-social {
+  padding: 30px 0;
+}
+.main-footer .footer-social a {
+  margin-left: 0;
+  margin: 5px 0;
+  margin-right: 24px;
+}
+.main-footer .footer-social a i {
+  margin: 0;
 }
 
 .footer-bottom {

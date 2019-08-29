@@ -269,6 +269,20 @@
     .search-form form {
         width: 100%;
     }
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .main-footer .footer-social{
+        text-align: center;
+        padding-bottom: 0;
+        a{
+            width: auto;
+            float: none;
+        }
+    }
 }
 
 
