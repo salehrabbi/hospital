@@ -1,6 +1,7 @@
+/*===================== Global Code ====================*/
 @media (min-width: 1620px) {
   .container {
-    width: 1578px;
+    width: 98.625em;
   }
 }
 @media (min-width: 1900px) {
@@ -78,6 +79,7 @@ body {
   font-family: "Fira Sans";
 }
 
+/*===================== Header Section ====================*/
 .main-header {
   position: relative;
 }
@@ -277,6 +279,7 @@ body {
   visibility: visible;
 }
 
+/*===================== Header Search Form ====================*/
 .search-form form {
   width: 471px;
   margin-left: auto;
@@ -308,6 +311,7 @@ body {
   border: none;
 }
 
+/*===================== Header Social ====================*/
 .share-area i {
   height: 32px;
   width: 32px;
@@ -326,6 +330,7 @@ body {
   text-decoration: none;
 }
 
+/*===================== Header Setting ====================*/
 .setting-area .container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -369,6 +374,7 @@ body {
   background-color: #ff023e;
 }
 
+/*===================== Google Translate ====================*/
 body {
   top: 0 !important;
 }
@@ -811,6 +817,7 @@ body {
 }
 
 /*=================== Table page ======================*/
+/*===================== Table Breadcramb ====================*/
 .bread-area {
   background-color: #00b69f;
 }
@@ -832,6 +839,7 @@ body {
   color: #006f61;
 }
 
+/*===================== Table Side Menu ====================*/
 .drawermenu {
   background: rgba(0, 182, 159, 0.08);
   position: relative;
@@ -891,6 +899,7 @@ body {
   display: none;
 }
 
+/*===================== Main Table Css ====================*/
 .table-content-area {
   padding-top: 5.5em;
 }
@@ -1166,6 +1175,7 @@ body {
   background: #b5b5b5;
 }
 
+/*===================== Table Accordition ====================*/
 .panel-group .panel + .panel {
   margin-top: 0;
 }
@@ -1216,6 +1226,7 @@ body {
   display: none;
 }
 
+/*===================== Blog Content ====================*/
 .blog-content {
   border-top: 1px solid #cbcbcb;
 }
@@ -1263,6 +1274,7 @@ body {
   background: #b5b5b5;
 }
 
+/*===================== Blog Form ====================*/
 .blog-form {
   border-radius: 16px 16px 0;
   border: 2px solid #eaeaea;

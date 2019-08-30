@@ -1,3 +1,5 @@
+//===================== Banner Slider ====================
+
 $('.banner-slider').slick({
     dots: false,
     slidesToShow: 1,
@@ -8,6 +10,8 @@ $('.banner-slider').slick({
     autoplay: true,
 });
 
+//===================== Evento Slider ====================
+
 $('.evento-slider').slick({
     dots: false,
     slidesToShow: 1,
@@ -17,6 +21,9 @@ $('.evento-slider').slick({
     draggable: true,
     autoplay: true,
 });
+
+
+//===================== Patner Slider ====================
 
 $('.patner-slider').slick({
     dots: false,
@@ -45,18 +52,20 @@ $('.patner-slider').slick({
 });
 
 
-
+//===================== Mega Menu Active ====================
 $(document).on('click', '.yamm .dropdown-menu', function (e) {
     e.stopPropagation()
 });
 
 
-
+//===================== Site Setting Js ====================
 $(function () {
     $(".options i").click(function () {
         $(".options").toggleClass("active");
     });
 });
+
+//===================== Setting Search Form ====================
 
 $(function () {
     $(".options .search").click(function () {
@@ -64,11 +73,14 @@ $(function () {
     });
 });
 
+//===================== Setting Soical icon ====================
 $(function () {
     $(".options .share").click(function () {
         $(".share-area").addClass("active");
     });
 });
+
+//===================== Header Setting ====================
 
 $(function () {
     $(".options .setting").click(function () {
@@ -76,6 +88,7 @@ $(function () {
     });
 });
 
+//===================== Setting Hide button ====================
 
 $(function () {
     $(".options .hide-item").click(function () {
@@ -83,6 +96,8 @@ $(function () {
     });
 });
 
+
+//===================== Change Site color filter ====================
 
 //var contraste = 0;
 function changeFilter(contraste) {
@@ -106,11 +121,14 @@ function changeFilter(contraste) {
     }
 };
 
+//===================== Tooltrip Active ====================
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
 
+
+//===================== Font Size Increase-decrease ====================
 var size = 16;
 $(document).ready(function () {
     $("#btn-increase").click(function () {
@@ -123,11 +141,11 @@ $(document).ready(function () {
     });
 });
 
-
+//===================== Menu Fixed Code ====================
 
 $(".header-space").height($(".main-header").outerHeight(true));
 
-
+//===================== Jquery Data Table ====================
 
 $(document).ready(function () {
     $('.data-table').DataTable({
@@ -144,6 +162,8 @@ $(document).ready(function () {
     });
 });
 
+
+//===================== Date Table Filter Custom Design ====================
 
 $(function () {
     $('.dataTables_length select').selectpicker();

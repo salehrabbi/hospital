@@ -1,8 +1,10 @@
+/*===================== Large Monitor ====================*/
 @media (max-width: 1620px) {
   .navbar-brand img {
     width: 13.833em;
   }
 }
+/*===================== Regular Monitor  ====================*/
 @media (max-width: 1366px) {
   html {
     font-size: 80%;
@@ -17,6 +19,7 @@
     padding-bottom: 0;
   }
 }
+/*===================== Small Monitor ====================*/
 @media (max-width: 1199px) {
   html {
     font-size: 75%;
@@ -35,6 +38,7 @@
     padding: 10px 15px;
   }
 }
+/*===================== Large Tab ====================*/
 @media (max-width: 991px) {
   .navbar-brand img {
     width: 6.92em;
@@ -80,6 +84,7 @@
     margin-top: -2em;
   }
 }
+/*===================== Regular Tab ====================*/
 @media (max-width: 767px) {
   .tramites-menu li {
     display: block;
@@ -199,6 +204,7 @@
     padding: 0;
   }
 }
+/*===================== Regular Mobile ====================*/
 @media (max-width: 575px) {
   .banner-slider .slider-img {
     min-height: 211px;
@@ -262,6 +268,7 @@
     float: none;
   }
 }
+/*===================== Small Mobile ====================*/
 @media (max-width: 375px) {
   .options i {
     height: 25px;
