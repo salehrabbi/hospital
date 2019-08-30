@@ -192,9 +192,10 @@ body {
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-    background-color: #e7e7e7;
+    background: none;
     margin: 0 auto;
     max-width: 829px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .mega-drop {
@@ -366,6 +367,8 @@ body {
         font-weight: 700;
         display: inline-block;
         margin-left: 30px;
+        display: flex;
+        align-items: center;
 
         button {
             background: none;
@@ -414,8 +417,7 @@ body {
     display: none;
 }
 
-#google_translate_element {
-    display: inline-block;
+.google-translate {
 
     .goog-te-gadget {
         font-size: 0;
@@ -494,6 +496,32 @@ body {
             font-weight: 400;
         }
     }
+
+
+}
+
+.google-translate {
+    position: relative;
+
+
+    #google_translate_element {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        opacity: 0;
+
+
+        .goog-te-combo {
+            width: 100%;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.google-translate.active .bootstrap-select.btn-group .dropdown-toggle .caret::after {
+    content: "\f106";
 }
 
 /*===================== banner-slider ====================*/
@@ -542,6 +570,11 @@ body {
     margin-top: (-2rem/2);
     cursor: pointer;
     left: em(40/32);
+    transition: .3s;
+
+    &:hover {
+        color: #00b69f;
+    }
 }
 
 .slick-slider .fa-caret-circle-right {
@@ -569,6 +602,13 @@ body {
         background-color: #eaeaea;
         margin: 5px em(15/16);
 
+
+        &:hover {
+            .icon {
+                background-color: #006f61;
+            }
+        }
+
         a {
             color: #006f61;
             display: block;
@@ -583,6 +623,7 @@ body {
             border-radius: 50%;
             vertical-align: middle;
             margin-right: 10px;
+            transition: .3s;
 
             div {
                 display: flex;
@@ -778,12 +819,19 @@ body {
     .item {
         padding: em(30/16) 0;
 
+        &:hover {
+            .img {
+                background-color: #00b69f;
+            }
+        }
+
         .img {
             width: em(192/16);
             height: em(192/16);
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
             border-radius: 50%;
             float: left;
+            transition: .3s;
 
             img {
                 width: 100%;
@@ -885,8 +933,17 @@ body {
             margin: 5px 0;
             margin-right: 24px;
 
+
+            &:hover {
+                i {
+                    background-color: #eaeaea;
+                    color: #ff023e;
+                }
+            }
+
             i {
                 margin: 0;
+                transition: .3s;
             }
         }
     }
@@ -1522,3 +1579,4 @@ body {
         margin-top: 5px;
     }
 }
+

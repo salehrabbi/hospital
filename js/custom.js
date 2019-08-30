@@ -97,6 +97,21 @@ $(function () {
 });
 
 
+
+$("body").mouseup(function () {
+    $(".google-translate").removeClass("active");
+});
+
+
+$(function () {
+    $(".google-translate").click(function () {
+        $(this).toggleClass("active");
+    });
+});
+
+
+
+
 //===================== Change Site color filter ====================
 
 //var contraste = 0;
@@ -168,3 +183,13 @@ $(document).ready(function () {
 $(function () {
     $('.dataTables_length select').selectpicker();
 });
+
+
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en'
+    }, 'google_translate_element');
+};
+
+

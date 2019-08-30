@@ -174,9 +174,10 @@ body {
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-  background-color: #e7e7e7;
+  background: none;
   margin: 0 auto;
   max-width: 829px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .mega-drop {
@@ -342,6 +343,12 @@ body {
   font-weight: 700;
   display: inline-block;
   margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .setting-area .contraste button {
   background: none;
@@ -383,26 +390,23 @@ body {
   display: none;
 }
 
-#google_translate_element {
-  display: inline-block;
-}
-#google_translate_element .goog-te-gadget {
+.google-translate .goog-te-gadget {
   font-size: 0;
 }
-#google_translate_element .goog-logo-link {
+.google-translate .goog-logo-link {
   display: none;
 }
-#google_translate_element .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.google-translate .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 332px;
 }
-#google_translate_element .bootstrap-select .dropdown-toggle {
+.google-translate .bootstrap-select .dropdown-toggle {
   height: 32px;
   border-radius: 32px;
   background-color: #006f61;
   padding: 5px;
   border-color: #006f61;
 }
-#google_translate_element .bootstrap-select .dropdown-toggle:before {
+.google-translate .bootstrap-select .dropdown-toggle:before {
   content: "\f1a0";
   font-family: "Font Awesome 5 Brands";
   -moz-osx-font-smoothing: grayscale;
@@ -418,23 +422,23 @@ body {
   font-size: 23px;
   top: 4px;
 }
-#google_translate_element .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+.google-translate .bootstrap-select.btn-group .dropdown-toggle .filter-option {
   text-align: center;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
 }
-#google_translate_element .bootstrap-select .dropdown-toggle:focus {
+.google-translate .bootstrap-select .dropdown-toggle:focus {
   outline: 0 !important;
 }
-#google_translate_element .bootstrap-select.btn-group .dropdown-toggle .caret {
+.google-translate .bootstrap-select.btn-group .dropdown-toggle .caret {
   border: none;
   font-size: 33px;
   color: #fff;
   top: -4px;
   right: 28px;
 }
-#google_translate_element .bootstrap-select.btn-group .dropdown-toggle .caret:after {
+.google-translate .bootstrap-select.btn-group .dropdown-toggle .caret:after {
   content: "\f107";
   font-family: "Font Awesome 5 Pro";
   -moz-osx-font-smoothing: grayscale;
@@ -445,6 +449,25 @@ body {
   text-rendering: auto;
   line-height: 1;
   font-weight: 400;
+}
+
+.google-translate {
+  position: relative;
+}
+.google-translate #google_translate_element {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  opacity: 0;
+}
+.google-translate #google_translate_element .goog-te-combo {
+  width: 100%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.google-translate.active .bootstrap-select.btn-group .dropdown-toggle .caret::after {
+  content: "\f106";
 }
 
 /*===================== banner-slider ====================*/
@@ -491,6 +514,11 @@ body {
   margin-top: -1rem;
   cursor: pointer;
   left: 1.25em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.slick-arrow:hover {
+  color: #00b69f;
 }
 
 .slick-slider .fa-caret-circle-right {
@@ -517,6 +545,9 @@ body {
   background-color: #eaeaea;
   margin: 5px 0.9375em;
 }
+.tramites-menu li:hover .icon {
+  background-color: #006f61;
+}
 .tramites-menu li a {
   color: #006f61;
   display: block;
@@ -530,6 +561,8 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 .tramites-menu li .icon div {
   display: -webkit-box;
@@ -710,6 +743,9 @@ body {
 .service .item {
   padding: 1.875em 0;
 }
+.service .item:hover .img {
+  background-color: #00b69f;
+}
 .service .item .img {
   width: 12em;
   height: 12em;
@@ -717,6 +753,8 @@ body {
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   float: left;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 .service .item .img img {
   width: 100%;
@@ -806,8 +844,14 @@ body {
   margin: 5px 0;
   margin-right: 24px;
 }
+.main-footer .footer-social a:hover i {
+  background-color: #eaeaea;
+  color: #ff023e;
+}
 .main-footer .footer-social a i {
   margin: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .footer-bottom {

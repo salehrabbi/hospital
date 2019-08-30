@@ -252,8 +252,10 @@
   }
 
   .service .item .img {
-    width: 6em;
-    height: 6em;
+    margin: 0 auto;
+    display: block;
+    float: none;
+    margin-bottom: 30px;
   }
 
   .service .item .text {
@@ -320,6 +322,37 @@
 
   .drawermenu {
     background: none;
+  }
+
+  .eventos .items .item {
+    display: block;
+  }
+
+  .eventos .items .item .img {
+    width: 100%;
+  }
+
+  .eventos .items .item .text {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .eventos .items .item .text date {
+    margin-bottom: 10px;
+  }
+
+  .eventos .button-u {
+    margin-top: -24px;
+  }
+
+  .service .item .text {
+    padding-left: 0;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+  }
+  .service .item .text p {
+    text-align: left;
   }
 }
 /*===================== Small Mobile ====================*/

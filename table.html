@@ -206,7 +206,15 @@
         </div>
         <div class="setting-area option-area">
             <div class="container flex">
-                <div id="google_translate_element"></div>
+                <div class="google-translate">
+                    <div id="google_translate_element"></div>
+                    <div class="btn-group bootstrap-select goog-te-combo">
+                        <button type="button" class="btn dropdown-toggle bs-placeholder btn-default">
+                            <span class="filter-option pull-left">Seleccionar Idioma</span>
+                            <span class="bs-caret"><span class="caret"></span></span>
+                        </button>
+                    </div>
+                </div>
                 <div class="contraste">
                     <span>Cambiar contraste</span>
                     <i class="fas fa-font black" onclick="changeFilter(0);" data-toggle="tooltip" data-placement="bottom" title="Cambiar contraste escala de grises"></i>
@@ -216,8 +224,8 @@
                 </div>
                 <div class="contraste Cambiar">
                     <span>Cambiar tamaño</span>
-                    <button><i class="fas fa-font red" id="btn-increase" data-toggle="tooltip" data-placement="bottom" title="Cambiar tamaño">+</i></button>
-                    <button><i class="fas fa-font red" id="btn-decrease" data-toggle="tooltip" data-placement="bottom" title="Cambiar tamaño">-</i></button>
+                    <button><i style="line-height: 27px;" class="fas red" id="btn-increase" data-toggle="tooltip" data-placement="bottom" title="Cambiar tamaño"><img src="images/+A.png" alt=""></i></button>
+                    <button><i style="line-height: 27px;" class="fas red" id="btn-decrease" data-toggle="tooltip" data-placement="bottom" title="Cambiar tamaño"><img src="images/-A.png" alt=""></i></button>
                 </div>
             </div>
         </div>
