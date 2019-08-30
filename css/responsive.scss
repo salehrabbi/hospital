@@ -96,6 +96,14 @@
         margin-left: 2em;
         margin-top: -2em;
     }
+
+    .table-social {
+        display: none;
+    }
+
+    .mega-drop-2 {
+        border: none;
+    }
 }
 
 /*===================== Regular Tab ====================*/
@@ -224,7 +232,36 @@
     .mega-drop {
         padding: 0;
     }
+
+    .main-table .dataTables_filter {
+        float: right;
+        width: 40%;
+        margin-top: 0;
+    }
+
+    .main-table .dataTables_length {
+        float: left;
+        width: 31%;
+    }
+
+    .main-table .dataTables_info {
+        height: auto;
+        margin: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-table .dataTables_paginate {
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+        margin: 0;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
 }
+
 /*===================== Regular Mobile ====================*/
 
 @media (max-width:575px) {
@@ -274,21 +311,45 @@
     .search-form form {
         width: 100%;
     }
-    .pc{
+
+    .pc {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
     }
-    .main-footer .footer-social{
+
+    .main-footer .footer-social {
         text-align: center;
         padding-bottom: 0;
-        a{
+
+        a {
             width: auto;
             float: none;
         }
     }
+
+    .dataTables_wrapper {
+        width: 518px;
+    }
+
+    .drawermenu::before {
+        display: none;
+    }
+
+    .drawermenu-col {
+        background: rgba(0, 182, 159, 0.08);
+        padding: 0;
+    }
+
+    .drawermenu {
+        background: none;
+    }
+
+
 }
+
 /*===================== Small Mobile ====================*/
 
 @media (max-width:375px) {

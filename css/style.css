@@ -843,6 +843,7 @@ body {
 .drawermenu {
   background: rgba(0, 182, 159, 0.08);
   position: relative;
+  font-size: 1rem;
 }
 .drawermenu:before {
   content: "";
@@ -860,7 +861,7 @@ body {
 }
 .drawermenu ul a {
   color: #006f61;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   line-height: 1.75;
 }
@@ -876,7 +877,7 @@ body {
 .drawermenu ul a.down i {
   float: right;
   position: absolute;
-  font-size: 2rem;
+  font-size: 2em;
   right: 0.625em;
   top: 0.65625em;
 }
@@ -1175,6 +1176,10 @@ body {
   background: #b5b5b5;
 }
 
+.table-responsive {
+  border: none;
+}
+
 /*===================== Table Accordition ====================*/
 .panel-group .panel + .panel {
   margin-top: 0;
@@ -1303,4 +1308,32 @@ body {
   position: absolute;
   left: 2em;
   top: 84%;
+}
+
+.table-social {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+  background: #fff;
+  padding: 40px 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin-top: -225px;
+}
+.table-social a {
+  margin-left: 0;
+  text-align: center;
+  display: block;
+  margin-bottom: 35px;
+}
+.table-social a:last-child {
+  margin-bottom: 0;
+}
+.table-social i {
+  margin-right: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
 }
